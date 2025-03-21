@@ -49,15 +49,16 @@
    **範例📌**
    
    計算介於 `0 ~ 1` 之間參數的logit轉換後信賴區間
-<!-- $$
-\left[
-\frac{e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
-{1 + e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}},
-\quad
-\frac{e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
-{1 + e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
-\right]
-$$ -->
+
+    <!-- $$
+    \left[
+    \frac{e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
+    {1 + e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}},
+    \quad
+    \frac{e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
+    {1 + e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
+    \right]
+    $$ -->
 
    ![logit transformed CI](pics/logit-transformed-CI.svg)
 
@@ -165,7 +166,7 @@ $$ -->
    # Script Purpose: 以模擬的方式，確認機率試算表的正確性
    # background： 首次獨立開發新老虎機遊戲
    # project: K8
-   # Author: 江為民
+   # Author: 王大明
    # Created Date: 2024/12/31
    # 程式架構：
    #   1. 建立賠率表
