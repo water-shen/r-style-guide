@@ -37,10 +37,11 @@
    計算 $ax^2+bx+c = 0$ 的兩根 (假設已知 $\Delta = b^2-4ac > 0$ )
    ，但是更推薦使用 `delta` 為 `d_` 命名，更複雜的算式請見 `6.` 的範例
    ```r
+   # Solve x^2 + 2x - 3 = 0
    a <- 1
    b <- 2
-   c <- 3
-   d_ <- b^2 - 4 * a * c
+   const <- -3
+   d_ <- b^2 - 4 * a * const
    solution <- c((-b + sqrt(d_)) / (2 * a), (-b - sqrt(d_)) / (2 * a))
    ```
 6. **複雜的公式可以使用多個變量來計算**
@@ -62,7 +63,7 @@ $$
    # 計算 Logit 信賴區間
    logit_ci <- function(k, n, conf.level = 0.95) {
      # 檢查數據合理性
-     if (k < 0 || n <= 0 || k > n) stop("k 必須在 0 到 n 之間")
+     if (k < 0 || n <= 0 || k > n) { stop("k 必須在 0 到 n 之間") }
      
      # 估計成功機率 p_hat
      p_hat <- k / n
