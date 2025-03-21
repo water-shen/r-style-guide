@@ -49,7 +49,7 @@
    **範例📌**
    
    計算介於 `0 ~ 1` 之間參數的logit轉換後信賴區間
-$$
+<!-- $$
 \left[
 \frac{e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
 {1 + e^{\log \frac{\hat{p}}{1-\hat{p}} - z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}},
@@ -57,7 +57,9 @@ $$
 \frac{e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
 {1 + e^{\log \frac{\hat{p}}{1-\hat{p}} + z_{\alpha/2} \sqrt{\frac{1}{n\hat{p}(1-\hat{p})}}}}
 \right]
-$$
+$$ -->
+
+   ![logit transformed CI](pics/logit-transformed-CI.svg)
 
    ```r
    # 計算 Logit 信賴區間
